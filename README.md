@@ -49,7 +49,7 @@ In case you wish to see it run right away after setting up the docker containers
 ### Some notes:
 Check ***docker-compose.yml*** for ports. The standard ports used for Airflow (8080) and PostgreSQL (5342) are mapped to the same value on our local machine. You might want to change these values depending on your current available ports.
 
-On the scripts folder, the file ***csv_extract_test.py*** removes the lines for Python's Try-Except functionality, which will cause the pipeline to fail if ran twice on the same day (as the error will be caught by Airflow instead). This is included for showcasing an example of pipeline failure, that can be visualized on the Airflow DAG UI on your localhost:
+On the scripts folder, the file ***csv_extract_test.py*** removes the lines for Python's Try-Except functionality, which will cause the pipeline to fail if ran twice on the same day, as it will incur an error in the shutil function (File already exists). This is included for showcasing an example of pipeline failure, that can be visualized on the Airflow DAG UI on your localhost:
 
  ![Alt text](image.png)
 
