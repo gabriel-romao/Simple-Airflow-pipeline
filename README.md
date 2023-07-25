@@ -53,3 +53,5 @@ On the scripts folder, the file ***csv_extract_test.py*** removes the lines for 
 
  ![Alt text](image.png)
 
+ Simply replace the original ***csv_extract.py*** with the test file if you wish to visualize a pipeline failure example.
+
